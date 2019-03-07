@@ -10,7 +10,7 @@ export class AppComponent {
   onClickStrava() {
     window.open(
       "https://www.strava.com/oauth/authorize?client_id=33266&redirect_uri=https://stravacommutetracker.herokuapp.com/code_callback&response_type=code&approval_prompt=force&scope=activity:read",
-      '_blank'
+      '_self'
       );
   }
 }
