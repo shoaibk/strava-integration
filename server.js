@@ -7,11 +7,12 @@ const app = express();
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/commute-tracker'));
 
+app.get('/code_callback', (req, res) => res.send('Got the code: ', res));
+
 app.get('/*', function(req,res) {
     res.sendFile(path.join(__dirname+'/dist/commute-tracker/index.html'));
 });
 
-app.get('/code_callback', (req, res) => res.send('Hello World!'))
 
 
 // Start the app by listening on the default Heroku port
