@@ -11,6 +11,10 @@ app.get('/code_callback',
     (req, res) => res.send('Got the code')
 );
 
+app.get('/.well-known/assetlinks.json',
+    (req, res) => res.send(`{"name": "Shoaib Khan", "address": "2012 Merivale"}`)
+);
+
 app.get('/*', function(req,res) {
     res.sendFile(path.join(__dirname+'/dist/commute-tracker/index.html'));
 });
