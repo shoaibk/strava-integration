@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rideshark.testapplink",
+      "sha256_cert_fingerprints":
+      ["69:29:C8:A2:49:72:17:C9:A8:28:8A:C2:56:FA:4C:21:6C:E7:14:93:F9:AC:7F:C5:BA:D2:CC:48:75:0D:52:33"]
+    }
+  }]

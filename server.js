@@ -12,7 +12,7 @@ app.get('/code_callback',
 );
 
 app.get('/.well-known/assetlinks.json', function(req,res) {
-    res.sendFile(path.join(__dirname+'/dist/commute-tracker/assetlinks.json'));
+    res.sendFile(path.join(__dirname+'/dist/commute-tracker/assets/assetlinks.json'));
 });
 
 app.get('/*', function(req,res) {
